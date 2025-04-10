@@ -12,8 +12,10 @@ This project investigates economic trends across Minnesota's 87 counties between
 
 ## Process
 
+The project leverages Python for data processing and visualization, primarily using libraries such as Pandas for data manipulation and Matplotlib for generating clear, insightful visualizations. A PostgreSQL database is employed to store and efficiently query the economic data, with SQLAlchemy or psycopg2 facilitating the connection between Python and the database. All analysis and visual exploration are conducted within a Jupyter Notebook environment, enabling interactive filtering, iterative development, and dynamic visualization.
 
 ## Analysis
+
 
 
 ## Conclusion
