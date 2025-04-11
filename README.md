@@ -1,11 +1,31 @@
-# Project3
+## Project Title
+
+"Economic Trends in Minnesota: A County-Level Analysis of Income and Unemployment (2019–2023)"
+
+## Introduction
+
+This project aims to analyze and visualize key economic trends across Minnesota's counties from 2019 to 2023, with a specific focus on Median Household Income and Unemployment Rates. By examining these indicators, the project will highlight regional disparities and evolving economic conditions, offering valuable insights into the financial well-being and employment landscape throughout the state.
+
+## Project Desciption
+
+This project investigates economic trends across Minnesota's 87 counties between 2019 and 2023, using data on Median Household Income and Unemployment Rates. Through interactive visualizations and comparative analysis, the project will identify shifts in income distribution and employment patterns over time. Special attention will be given to highlighting regional disparities and economic resilience, offering a clearer understanding of how different communities within Minnesota have experienced and responded to recent economic changes. The goal is to provide policymakers, researchers, and the public with accessible insights into local economic conditions across the state.
+
+## Process
+
+The project leverages Python for data processing and visualization, primarily using libraries such as Pandas for data manipulation and Matplotlib for generating clear, insightful visualizations. A PostgreSQL database is employed to store and efficiently query the economic data, with SQLAlchemy or psycopg2 facilitating the connection between Python and the database. All analysis and visual exploration are conducted within a Jupyter Notebook environment, enabling interactive filtering, iterative development, and dynamic visualization.
+
+## Analysis
+
+
+
+## Conclusion
 
 
 ## Credits
  
-Ally Eveslage- README, Analysis Coding https://www.linkedin.com/in/allyson-eveslage-a21496193/
-
 Jackson Popelka- HeatMap, Analysis Coding https://www.linkedin.com/in/jackson-popelka-b04755340/
+
+Ally Eveslage- README, Analysis Coding https://www.linkedin.com/in/allyson-eveslage-a21496193/
  
 Erica Wollmering- Project Manager, Data Implications/Writing  https://www.linkedin.com/in/ericawollmering/
  
