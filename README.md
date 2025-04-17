@@ -16,10 +16,85 @@ The project leverages Python for data processing and visualization, primarily us
 
 ## Analysis
 
+### MN by Median Household Income
+This chart shows Minnesota counties by median household income.
 
+An interactive slider (via ipywidgets) lets users filter counties by income — set at $75K on the left, and $100K on the right to highlight top earners.
+
+It helps visualize regional wealth patterns and compare counties to the U.S. average income of $78,538.
+
+(barchart)
+
+### Counties by Unemployment
+Here are the top counties by unemployment:  
+- **Mahnomen** – Highest jobless rate, lowest income; White Earth Nation reservation.  
+- **Clearwater** – Rural, reservation area with limited job access.  
+- **Pine** – Lower education, older commuters; median age 45.8.  
+- **Cass** – Remote, economically challenged; includes Leech Lake Reservation.  
+- **Aitkin** – Retirement-focused, long commutes; median age 56; part of Mille Lacs Reservation.
+
+(barchart)
+
+### MN County Heatmap
+These interactive heatmaps were built in Streamlit using Plotly and GeoPandas.  
+
+The left map shows median income, the right shows unemployment — darker shades indicate higher values.  
+
+Side-by-side views make it easy to spot geographic patterns and possible links between income and unemployment.
+
+Interactivity was key. This map lets users filter and compare specific counties.  
+
+Here, Hennepin County is selected to show how users can view income and unemployment side by side.  
+
+We also filtered for top-income counties to compare their unemployment rates.  
+
+Carver, Scott, and Washington, for example, show high incomes with low to moderate unemployment.  
+
+This dual-filter view helps spot where income and unemployment align or differ.  
+
+It prompts deeper questions—like whether high income always means low unemployment.  
+
+Our IQR analysis, however, found no outliers with both high income & high unemployment or vice versa, as the next slides will show.
+
+### Distributions and Outliers
+We used violin plots to show distribution and outliers.  
+
+A violin plot combines a box plot (IQR, median, outliers) with a density plot (distribution shape).  
+
+They clearly show most counties cluster between ~$69K and ~$77.5K, with a long right tail indicating income inequality.  
+
+Upper outliers: counties earning over $90,304.25  
+Lower outliers: under $56,378.25  
+
+Wealthy counties—like Wright with just 2.1% unemployment—generally show economic stability and opportunity.
+
+(first violin chart)
+
+This violin plot shows unemployment rate distribution across Minnesota counties.  
+
+The plot’s width reflects how many counties fall near each rate — wider areas = more common values.  
+
+The box marks the IQR (middle 50%). Based on that, we found:  
+- **Lower fence**: ~0.53% — no counties below this (no low-end outliers)  
+- **Upper fence**: ~6.73% — counties above this are high unemployment outliers  
+
+Only a few counties exceeded this threshold, and they also have low incomes — indicating compounded economic hardship.  
+
+**Mahnomen** stands out with 10.2% unemployment and $53,925 income (below income outlier threshold).  
+**Clearwater** is another, at 7.4% unemployment and also below average income.  
+
+These outliers highlight areas likely in need of policy attention or support.
+
+(seconda violin chart)
 
 ## Conclusion
+To wrap up — our project analyzed income and unemployment across Minnesota counties (2019–2023).  
 
+Using violin plots and IQR, we flagged outliers, and built interactive tools to explore the data from multiple angles — whether comparing top earners, spotting vulnerable counties, or filtering by region.  
+
+Key insight: No counties showed inverse trends (high income + high unemployment), but some, like Mahnomen and Clearwater, faced *compounded hardship* with both low income and high unemployment.  
+
+Our interactive, SQL + Python-driven approach makes it easier for researchers and policymakers to uncover and act on regional economic patterns.
 
 ## Credits
  
