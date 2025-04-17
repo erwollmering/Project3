@@ -152,6 +152,3 @@ with col2:
         legend=dict(bgcolor='rgba(0,0,0,0)')
     )
     st.plotly_chart(fig_unemp, use_container_width=True)
-
-# Remove the bar charts section
-# If you no longer want the bar charts displayed, simply omit this section from your code
