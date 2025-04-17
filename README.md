@@ -23,7 +23,7 @@ An interactive slider (via ipywidgets) lets users filter counties by income — 
 
 It helps visualize regional wealth patterns and compare counties to the U.S. average income of $78,538.
 
-(barchart)
+![images](graphs/Bar2.png)
 
 ### Counties by Unemployment
 Here are the top counties by unemployment:  
@@ -33,7 +33,7 @@ Here are the top counties by unemployment:
 - **Cass** – Remote, economically challenged; includes Leech Lake Reservation.  
 - **Aitkin** – Retirement-focused, long commutes; median age 56; part of Mille Lacs Reservation.
 
-(barchart)
+![images](graphs/Bar1.png)
 
 ### MN County Heatmap
 These interactive heatmaps were built in Streamlit using Plotly and GeoPandas.  
@@ -68,7 +68,7 @@ Lower outliers: under $56,378.25
 
 Wealthy counties—like Wright with just 2.1% unemployment—generally show economic stability and opportunity.
 
-(first violin chart)
+![images](graphs/income_violin.png)
 
 This violin plot shows unemployment rate distribution across Minnesota counties.  
 
@@ -85,7 +85,7 @@ Only a few counties exceeded this threshold, and they also have low incomes — 
 
 These outliers highlight areas likely in need of policy attention or support.
 
-(seconda violin chart)
+![images](graphs/unemp_percent_viloin.png)
 
 ## Conclusion
 To wrap up — our project analyzed income and unemployment across Minnesota counties (2019–2023).  
